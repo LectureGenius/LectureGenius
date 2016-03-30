@@ -14,6 +14,8 @@
 		005BE0731CAB5C010078E80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005BE0711CAB5C010078E80C /* LaunchScreen.storyboard */; };
 		005BE07E1CAB5C020078E80C /* LectureGeniusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BE07D1CAB5C020078E80C /* LectureGeniusTests.swift */; };
 		005BE0891CAB5C020078E80C /* LectureGeniusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BE0881CAB5C020078E80C /* LectureGeniusUITests.swift */; };
+		005BE0971CAB5F6D0078E80C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BE0961CAB5F6D0078E80C /* LoginViewController.swift */; };
+		147B56006299F42636C771BA /* libPods-LectureGenius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BDB7AB1047B88C227559E3 /* libPods-LectureGenius.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		005BE0841CAB5C020078E80C /* LectureGeniusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LectureGeniusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		005BE0881CAB5C020078E80C /* LectureGeniusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureGeniusUITests.swift; sourceTree = "<group>"; };
 		005BE08A1CAB5C020078E80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		005BE0961CAB5F6D0078E80C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC908A1D2694E4F88E8DC4A2 /* Pods-LectureGenius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LectureGenius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LectureGenius/Pods-LectureGenius.debug.xcconfig"; sourceTree = "<group>"; };
+		D4BDB7AB1047B88C227559E3 /* libPods-LectureGenius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LectureGenius.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD90D99B87EF9A1A90A542B5 /* Pods-LectureGenius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LectureGenius.release.xcconfig"; path = "Pods/Target Support Files/Pods-LectureGenius/Pods-LectureGenius.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147B56006299F42636C771BA /* libPods-LectureGenius.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,8 @@
 				005BE07C1CAB5C020078E80C /* LectureGeniusTests */,
 				005BE0871CAB5C020078E80C /* LectureGeniusUITests */,
 				005BE0661CAB5C010078E80C /* Products */,
+				B13FC41322C6D29FB9B59A03 /* Pods */,
+				193B6F41BB92B076AC6697A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 				005BE06F1CAB5C010078E80C /* Assets.xcassets */,
 				005BE0711CAB5C010078E80C /* LaunchScreen.storyboard */,
 				005BE0741CAB5C010078E80C /* Info.plist */,
+				005BE0961CAB5F6D0078E80C /* LoginViewController.swift */,
 			);
 			path = LectureGenius;
 			sourceTree = "<group>";
@@ -125,6 +135,23 @@
 			path = LectureGeniusUITests;
 			sourceTree = "<group>";
 		};
+		193B6F41BB92B076AC6697A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDB7AB1047B88C227559E3 /* libPods-LectureGenius.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B13FC41322C6D29FB9B59A03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC908A1D2694E4F88E8DC4A2 /* Pods-LectureGenius.debug.xcconfig */,
+				DD90D99B87EF9A1A90A542B5 /* Pods-LectureGenius.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 005BE08D1CAB5C020078E80C /* Build configuration list for PBXNativeTarget "LectureGenius" */;
 			buildPhases = (
+				16EEEF5027A2BCD56DDD5C88 /* Check Pods Manifest.lock */,
 				005BE0611CAB5C010078E80C /* Sources */,
 				005BE0621CAB5C010078E80C /* Frameworks */,
 				005BE0631CAB5C010078E80C /* Resources */,
+				58B64DAAA38F43E4ED943D1B /* Embed Pods Frameworks */,
+				919FD9A89764A01274C2AB6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +281,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16EEEF5027A2BCD56DDD5C88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		58B64DAAA38F43E4ED943D1B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LectureGenius/Pods-LectureGenius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919FD9A89764A01274C2AB6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LectureGenius/Pods-LectureGenius-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		005BE0611CAB5C010078E80C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005BE0971CAB5F6D0078E80C /* LoginViewController.swift in Sources */,
 				005BE06B1CAB5C010078E80C /* ViewController.swift in Sources */,
 				005BE0691CAB5C010078E80C /* AppDelegate.swift in Sources */,
 			);
@@ -395,6 +474,7 @@
 		};
 		005BE08E1CAB5C020078E80C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC908A1D2694E4F88E8DC4A2 /* Pods-LectureGenius.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LectureGenius/Info.plist;
@@ -406,6 +486,7 @@
 		};
 		005BE08F1CAB5C020078E80C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD90D99B87EF9A1A90A542B5 /* Pods-LectureGenius.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LectureGenius/Info.plist;
@@ -482,6 +563,7 @@
 				005BE08F1CAB5C020078E80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005BE0901CAB5C020078E80C /* Build configuration list for PBXNativeTarget "LectureGeniusTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +572,7 @@
 				005BE0921CAB5C020078E80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005BE0931CAB5C020078E80C /* Build configuration list for PBXNativeTarget "LectureGeniusUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +581,7 @@
 				005BE0951CAB5C020078E80C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
